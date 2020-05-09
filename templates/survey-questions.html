@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+  <title>MOODY</title>
+  <link href="../static/style-survey-questions.css" type="text/css" rel="stylesheet">
+  <script src='../static/scripts/main.js'></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+  <script src='../static/scripts/handlers.js'></script>
+  <script src='../static/scripts/piklor.js'></script>
+  <script src='../static/scripts/main.js'></script>
+
+
+  <link href="../static/style-survey-questions.css" rel="stylesheet">
+
+  <style>
+    .flex-button-container {
+      display: flex;
+      background-color: #bdcbe6;
+      justify-content: center;
+    }
+
+    .flex-button-container>div {
+      margin: 10px;
+      font-size: 30px;
+    }
+  </style>
+  <title>MOODY</title>
+  <link href="../static/style-survey-questions.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav>
+    <a href="/">
+      <img border="0" alt="logo" src="https://storage.googleapis.com/assets-moody-trial/moodylogo.png" width="55vw"
+        height="55vh">
+    </a>
+
+    <label class="switch">
+      <input class="switch-input" type="checkbox" id="color-blind" />
+      <span class="switch-label" data-on="Color Blind Friendly" data-off="Not Color Blind Friendly"></span>
+      <span class="switch-handle"></span>
+    </label>
+  </nav>
+
+  <div class="wave">
+    <div id="wave-white-survey"></div>
+    <div id="wave-blue-survey"></div>
+    <div id="wave-pink-survey"></div>
+  </div>
+
+  <h1>S U R V E Y</h1>
+  <div class="main-survey">
+    <!-- <img id="mainq" style="width:30%" src="https://storage.googleapis.com/assets-moody-trial/survey-title.png"> -->
+    <div class="survey-question" id="howWasYourDay">
+      <label>From 1 to 10 (worst to greatest), how has your day been?</label>
+    </div>
+    <div class="slidecontainer">
+      <input required type="range" min="1" max="10" value="2" class="slider" id="myRange"></input>
+      <p>Value: <span id="demo"></span></p>
+    </div>
+
+    <div class="survey-question" id="howManyWorkHours">
+      <label>How many hours of work do you have to do today?</label>
+    </div>
+    <div class="slidecontainer">
+      <input required type="range" min="0" max="12" value="1" class="slider" id="myRange2">
+      <p>Value: <span id="demo2"></span></p>
+    </div>
+
+    <div class="survey-question" id="pickMoodColor">
+      <label>What color best describes you right now?</label>
+    </div>
+    <div class="col-lg-6 picker-wrapper" id="colorPicker">
+      <button class="btn btn-default">Select color</button>
+      <div class="color-picker">
+      </div>
+    </div>
+
+    <div class="survey-question" id="chooseAdjectives">
+      <label>What adjective best resembles you at this moment?</label>
+      <table class="adjective-table">
+        <tbody>
+          <tr>
+            <td><input required type="checkbox" name="adjective" value="Stressed"
+                onclick="return MultiSelectAdjective();">
+              <label>Stressed </label></td>
+            <td><input type="checkbox" name="adjective" value="Energetic" onclick="return MultiSelectAdjective();">
+              <label>Energetic</label></td>
+            <td><input type="checkbox" name="adjective" value="Agitated" onclick="return MultiSelectAdjective();">
+              <label>Agitated</label></td>
+            <td><input type="checkbox" name="adjective" value="Calm" onclick="return MultiSelectAdjective();">
+              <label>Calm</label> </td>
+            <td> <input type="checkbox" name="adjective" value="Joyful" onclick="return MultiSelectAdjective();">
+              <label>Joyful</label> </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="adjective" value="Fearful" onclick="return MultiSelectAdjective();">
+              <label>Fearful</label> </td>
+            <td><input type="checkbox" name="adjective" value="Happy" onclick="return MultiSelectAdjective();">
+              <label>Happy</label></td>
+            <td><input type="checkbox" name="adjective" value="Enthusiastic" onclick="return MultiSelectAdjective();">
+              <label>Enthusiastic</label></td>
+            <td><input type="checkbox" name="adjective" value="Lonely" onclick="return MultiSelectAdjective();">
+              <label>Lonely</label> </td>
+            <td><input type="checkbox" name="adjective" value="Ambitious" onclick="return MultiSelectAdjective();">
+              <label>Ambitious</label></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="adjective" value="Angry" onclick="return MultiSelectAdjective();">
+              <label>Angry</label></td>
+            <td><input type="checkbox" name="adjective" value="Exhausted" onclick="return MultiSelectAdjective();">
+              <label>Exhausted</label>
+            </td>
+            <td><input type="checkbox" name="adjective" value="Sad" onclick="return MultiSelectAdjective();">
+              <label>Sad</label> </td>
+            <td><input type="checkbox" name="adjective" value="Comical" onclick="return MultiSelectAdjective();">
+              <label>Comical</label></td>
+            <td><input type="checkbox" name="adjective" value="Fresh" onclick="return MultiSelectAdjective();">
+              <label>Fresh</label> </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="adjective" value="Healthy" onclick="return MultiSelectAdjective();">
+              <label>Healthy </label></td>
+            <td><input type="checkbox" name="adjective" value="Powerful" onclick="return MultiSelectAdjective();">
+              <label>Powerful</label></td>
+            <td><input type="checkbox" name="adjective" value="Lovely" onclick="return MultiSelectAdjective();">
+              <label>Lovely</label></td>
+            <td><input type="checkbox" name="adjective" value="Sweet" onclick="return MultiSelectAdjective();">
+              <label>Sweet</label></td>
+            <td><input type="checkbox" name="adjective" value="Tranquil" onclick="return MultiSelectAdjective();">
+              <label>Tranquil</label></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <div class="survey-question" id="chooseCrowdSize">
+      <label>Would you rather be:</label>
+      <div class="radio-option-person">
+        <input type="radio" name="person-surround" value="1" onclick="return scrollToChooseLocation();"> <label>Left
+          alone</label>
+        </input>
+        <input type="radio" name="person-surround" value="2" onclick="return scrollToChooseLocation();"> <label>With a
+          few people</label>
+        </input>
+        <input type="radio" name="person-surround" value="3" onclick="return scrollToChooseLocation();"> <label>With a
+          group</label>
+        </input>
+        <input type="radio" name="person-surround" value="4" onclick="return scrollToChooseLocation();"> <label>With a
+          crowd</label>
+        </input>
+      </div>
+
+    </div>
+
+    <div class="survey-question" id="chooseLocation">
+      <label>Where do you want to be right now?</label>
+      <table class="location-table">
+        <tbody>
+          <tr>
+            <td>
+              <input type="radio" class="radio_item" value="Beach" name="item" id="radio1"
+                onclick="return scrolltoEnterFavMedia();" />
+              <label class="label_item" for="radio1">
+                <img alt="Beach" src="https://storage.googleapis.com/assets-moody-trial/locations/beach.jpg"> </label>
+              <div class="text">Beach</div>
+            </td>
+            <td>
+              <input type="radio" class="radio_item" value="Coffee" name="item" id="radio2"
+                onclick="return scrolltoEnterFavMedia();" />
+              <label class="label_item" for="radio2">
+                <img alt="Coffee Shop" src="https://storage.googleapis.com/assets-moody-trial/locations/coffee.jpg">
+              </label>
+              <div class="text">Coffee</div>
+            </td>
+            <td>
+              <input type="radio" class="radio_item" value="Sleep" name="item" id="radio3"
+                onclick="return scrolltoEnterFavMedia();" />
+              <label class="label_item" for="radio3">
+                <img alt="Bed" src="https://storage.googleapis.com/assets-moody-trial/locations/bed.jpg"> </label>
+              <div class="text">Bed</div>
+            </td>
+            <td>
+              <input type="radio" class="radio_item" value="Low Energy" name="item" id="radio4"
+                onclick="return scrolltoEnterFavMedia();" />
+              <label class="label_item" for="radio4">
+                <img alt="Hole" src="https://storage.googleapis.com/assets-moody-trial/locations/hole.jpg"> </label>
+              <div class="text">Hole</div>
+            </td>
+            <td>
+              <input type="radio" class="radio_item" value="Jazz" name="item" id="radio5"
+                onclick="return scrolltoEnterFavMedia();" />
+              <label class="label_item" for="radio5">
+                <img alt="Jazz Bar" src="https://storage.googleapis.com/assets-moody-trial/locations/jazz.jpg"> </label>
+              <div class="text">Jazz Bar</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" class="radio_item" value="Concert" name="item" id="radio6"
+                onclick="return scrolltoEnterFavMedia();" />
+              <label class="label_item" for="radio6">
+                <img alt="Mosh pit" src="https://storage.googleapis.com/assets-moody-trial/locations/mosh.jpg"> </label>
+              <div class="text">Mosh pit</div>
+            </td>
+            <td>
+              <input type="radio" class="radio_item" value="Adventurous" name="item" id="radio7"
+                onclick="return scrolltoEnterFavMedia();" />
+              <label class="label_item" for="radio7">
+                <img alt="Mountain" src="https://storage.googleapis.com/assets-moody-trial/locations/mountain.jpg">
+              </label>
+              <div class="text">Mountain</div>
+            </td>
+            <td>
+              <input type="radio" class="radio_item" value="Playful" name="item" id="radio8"
+                onclick="return scrolltoEnterFavMedia();" />
+              <label class="label_item" for="radio8">
+                <img alt="Park" src="https://storage.googleapis.com/assets-moody-trial/locations/park.jpg"> </label>
+              <div class="text">Park</div>
+            </td>
+            <td>
+              <input type="radio" class="radio_item" value="Travel" name="item" id="radio9"
+                onclick="return scrolltoEnterFavMedia();" />
+              <label class="label_item" for="radio9">
+                <img alt="Road trip" src="https://storage.googleapis.com/assets-moody-trial/locations/roadtrip.jpg">
+              </label>
+              <div class="text">Road trip</div>
+            </td>
+            <td>
+              <input type="radio" class="radio_item" value="Rick Astley" name="item" id="radio10"
+                onclick="return scrolltoEnterFavMedia();" />
+              <label class="label_item" for="radio10">
+                <img alt="Surprise me" src="https://storage.googleapis.com/assets-moody-trial/locations/surpirse.jpg">
+              </label>
+              <div class="text">Surprise me</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <div class="survey-question" id="enterFavMedia">
+      <label>What are some of your favorite shows and movies?</label>
+      <div class="faves-input">
+        <input type="text" id="faves" name="faves" required minlength="4" maxlength="100"
+          style="font-size:12pt;height:5vmin;width:100vmin;">
+
+      </div>
+    </div>
+
+    <button class="bttn sbmt" id="surveySubmitButton">S U B M I T</button>
+  </div>
+
+</body>
+
+</html>

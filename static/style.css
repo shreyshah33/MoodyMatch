@@ -1,0 +1,278 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #bdcbe6;
+}
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+nav {
+    position: absolute;
+    z-index: 1500;
+    top: 0;
+    left: 0;
+    width: 30vw;
+}
+
+nav a {
+    z-index: 1500;
+    text-decoration: none;
+    font-family: Montserrat;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    float: left;
+    text-shadow: 1px 1px 1px grey;
+    margin-left: 2vh;
+    opacity: 90%;
+}
+
+@media only screen and (min-width: 700px) {
+    .website_logo {
+        background-color: #bdcbe6;
+        position: absolute;
+        display: block;
+        top: 30%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 1000px;
+        margin: 0 auto;
+        /* -height/2 */
+    }
+    .website_logo #hello {
+        width: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .website_logo #moody {
+        width: 30%;
+        margin-top: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .website_logo #slogan {
+        margin-top: 10px;
+        width: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .website_logo #get-star {
+        margin-top: 30px;
+        width: 15%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    button {
+        width: 50vw;
+        background: #ffffff;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .website_logo {
+        background-color: #bdcbe6;
+        position: absolute;
+        display: block;
+        top: 30%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 1000px;
+        margin: 0 auto;
+        /* -height/2 */
+    }
+    .website_logo #hello {
+        width: 40%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .website_logo #moody {
+        width: 50%;
+        margin-top: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .website_logo #slogan {
+        margin-top: 10px;
+        width: 40%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .website_logo #get-star {
+        margin-top: 30px;
+        width: 30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 150px;
+    background: #bdcbe6;
+    overflow: hidden;
+}
+
+h2 {
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    top: 2vh;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2em;
+    line-height: 44px;
+    text-align: center;
+    color: #274483;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 6px;
+}
+
+h1 {
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    top: 4vh;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4em;
+    line-height: 122px;
+    text-align: center;
+    letter-spacing: 5px;
+    color: #274483;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 6px;
+}
+
+p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 2vh;
+    top: 20vh;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 30px;
+    text-align: center;
+    color: #274483;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+button {
+    position: relative;
+    width: 180px;
+    height: 5vh;
+    margin: 0 auto;
+    top: 28vh;
+    padding: 4px;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.8em;
+    line-height: 18px;
+    text-decoration: none;
+    display: block;
+    align-items: center;
+    text-align: center;
+    color: #274483;
+    background: #ffffff;
+}
+a {
+    text-decoration: none;
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(https://storage.googleapis.com/assets-moody-trial/lp-blue-wave.png);
+    background-size: 1000px 100px;
+    animation: animate 30s linear infinite;
+    animation-delay: 0s;
+}
+
+.wave.lp-blue-wave {
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    animation-delay: 0s;
+    top: 0;
+}
+
+.wave-bottom-pink {
+    position: absolute;
+    margin: 0px auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 100px;
+    background: url(https://storage.googleapis.com/assets-moody-trial/lp-pink-wave.png);
+    background-size: 1000px 100px;
+    animation: animate 10s linear infinite;
+    animation-delay: 0s;
+}
+
+.wave-bottom-white {
+    position: absolute;
+    margin: 0px auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 900;
+    height: 120px;
+    background: url(https://storage.googleapis.com/assets-moody-trial/lp-white-wave.png);
+    background-size: 1000px 100px;
+    animation: animate-2 20s linear infinite;
+    animation-delay: 0s;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate-2 {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0;
+    }
+}

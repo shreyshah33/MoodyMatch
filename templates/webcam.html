@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>
+        Webcam - Moody
+    </title>
+    <link href="{{ url_for('static', filename='webcam/webcam.css') }}" type="text/css" rel="stylesheet">
+    <script src='../static/webcam/webcam.js'></script>
+    <!-- <script type="text/javascript" src="{{ url_for('static', filename='webcam/webcam.js') }}"></script> -->
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='webcam/webcam.css') }}"> -->
+
+</head>
+
+<body>
+
+    <nav>
+        <!-- <a href="index.html">M O O D Y</a> -->
+        <a href="/">
+            <img border="0" alt="logo" src="https://storage.googleapis.com/assets-moody-trial/moodylogo.png"
+                width="55vw" height="55vh">
+        </a>
+    </nav>
+
+    <div class="wave">
+        <div id="wave-white-survey"></div>
+        <div id="wave-blue-survey"></div>
+        <div id="wave-pink-survey"></div>
+    </div>
+
+    <!-- <img id="main-title" style="width:30%" src="https://storage.googleapis.com/assets-moody-trial/capture-title.png"> -->
+
+    <h1>CAPTURE IMAGE</h1>
+
+    <div id="vid-controls">
+        <!-- <video id="vid-show" autoplay>
+            <source src="https://www.youtube.com/embed/oilZ1hNZPRM"> 
+            </source>
+        </video> -->
+        <div class="flex-container">
+            <div class="box">
+                <video id="vid-show" autoplay width="640" height="480"
+                    src="https://archive.org/download/Popeye_forPresident/Popeye_forPresident_512kb.mp4" muted>
+                </video>
+                <input id="vid-take" type="button" value="Take Photo" />
+            </div>
+            <div class="box">
+                <!-- <div id="vid-canvas"></div>  -->
+                <image id='photo' alt=""></image>
+                <input id="send" type="button" value="Send Photo" />
+            </div>
+
+            <!-- <input id="vid-take" type="button" value="Take Photo" />
+        <div id="vid-canvas"></div>
+        <image id='photo' alt=""></image>
+        <input id="send" type="button" value="Send Photo" /> -->
+        </div>
+</body>
+
+
+</html>

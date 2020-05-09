@@ -1,0 +1,45 @@
+{
+    "colors": {
+        "1ABC9C": [
+            "Healthy",
+            "Tranquil"
+        ],
+        "762B99": [
+            "Ambitious"
+        ],
+        "255EBE": [
+            "Sad",
+            "Exhausted"
+        ],
+        "49A2F0": [
+            "Calm",
+            "Joyful"
+        ],
+        "E786F2": [
+            "Love",
+            "Sweet"
+        ],
+        "9A253E": [
+            "Angry",
+            "Agitated",
+            "Stressed",
+            "Powerful"
+        ],
+        "E87F5F": [
+            "Enthusiastic",
+            "Happy"
+        ],
+        "F1EC67": [
+            "Uplifting",
+            "Comical"
+        ],
+        "F7E5C5": [
+            "Fresh"
+        ],
+        "000000": [
+            "Fear",
+            "Lonely"
+        ],
+        "None": []
+    }
+}

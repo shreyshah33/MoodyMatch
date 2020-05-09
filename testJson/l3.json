@@ -1,0 +1,14 @@
+{
+    "answers": {
+        "day": "5",
+        "hours": "int",
+        "color": "255EBE",
+        "adjective": [
+            "Content",
+            "Bored"
+        ],
+        "crowd": "int",
+        "location": "string",
+        "media": "string"
+    }
+}

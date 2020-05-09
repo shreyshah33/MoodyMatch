@@ -1,0 +1,60 @@
+{
+    "moods": {
+        "stress": {
+            "Stressed": 5,
+            "Agitated": 4,
+            "Fearful": 3,
+            "Lonely": 2,
+            "Angry": 2,
+            "Exhausted": 3,
+            "Sad": 1
+        },
+        "joy": {
+            "Joyful": 5,
+            "Happy": 5,
+            "Lovely": 4,
+            "Comical": 4,
+            "Energetic": 3,
+            "Enthusiastic": 3,
+            "Fresh": 3,
+            "Healthy": 3,
+            "Sweet": 3,
+            "Calm": 2,
+            "Tranquil": 2,
+            "Powerful": 1,
+            "Ambitious": 1
+        },
+        "angry": {
+            "Agitated": 5,
+            "Angry": 4,
+            "Stressed": 2,
+            "Exhausted": 1,
+            "Powerful": 1
+        },
+        "sad": {
+            "Sad": 5,
+            "Agitated": 4,
+            "Fearful": 3,
+            "Stressed": 3,
+            "Angry": 3,
+            "Lonely": 2,
+            "Exhausted": 1
+        },
+        "energy": {
+            "Energetic": 5,
+            "Agitated": 5,
+            "Enthusiastic": 4,
+            "Comical": 4,
+            "Powerful": 4,
+            "Sweet": 3,
+            "Joyful": 3,
+            "Fearful": 3,
+            "Ambitious": 3,
+            "Angry": 3,
+            "Bored": 2,
+            "Calm": 1,
+            "Tranquil": 1,
+            "Lonely": 1
+        }
+    }
+}

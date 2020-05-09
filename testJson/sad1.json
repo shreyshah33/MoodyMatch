@@ -1,0 +1,17 @@
+{
+    "answers": {
+        "day": "3",
+        "hours": "int",
+        "color": "9A253E",
+        "adjective": [
+            "Stressed",
+            "Angry",
+            "Exhausted",
+            "Lonely",
+            "Sad"
+        ],
+        "crowd": "int",
+        "location": "string",
+        "media": "string"
+    }
+}

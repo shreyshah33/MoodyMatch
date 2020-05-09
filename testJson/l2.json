@@ -1,0 +1,15 @@
+{
+    "answers": {
+        "day": "2",
+        "hours": "int",
+        "color": "000000",
+        "adjective": [
+            "Exhausted",
+            "Stressed",
+            "Numb"
+        ],
+        "crowd": "int",
+        "location": "string",
+        "media": "string"
+    }
+}

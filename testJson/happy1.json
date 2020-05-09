@@ -1,0 +1,17 @@
+{
+    "answers": {
+        "day": "8",
+        "hours": "int",
+        "color": "9A253E",
+        "adjective": [
+            "Happy",
+            "Enthusiastic",
+            "Calm",
+            "Healthy",
+            "Fresh"
+        ],
+        "crowd": "int",
+        "location": "string",
+        "media": "string"
+    }
+}

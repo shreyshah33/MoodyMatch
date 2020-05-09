@@ -1,0 +1,7 @@
+  
+env
+key.json
+image.png
+.DS_Store
+__pycache__/*
+.env

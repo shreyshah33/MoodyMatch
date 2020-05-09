@@ -1,0 +1,14 @@
+{
+    "answers": {
+        "day": "8",
+        "hours": "int",
+        "color": "F1EC67",
+        "adjective": [
+            "Content",
+            "Energetic"
+        ],
+        "crowd": "int",
+        "location": "string",
+        "media": "string"
+    }
+}

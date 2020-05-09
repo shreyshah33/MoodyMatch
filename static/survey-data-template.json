@@ -1,0 +1,14 @@
+{
+    "answers": {
+        "day": "int",
+        "hours": "int",
+        "color": "string (hex)",
+        "adjective": [
+            "stressed",
+            "angry"
+        ],
+        "crowd": "int",
+        "location": "string",
+        "media": "string"
+    }
+}

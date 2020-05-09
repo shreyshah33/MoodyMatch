@@ -1,0 +1,342 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #bdcbe6;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    position: absolute;
+    z-index: 1500;
+    top: 0;
+    left: 0;
+    width: 30vw;
+}
+
+nav a {
+    z-index: 1500;
+    text-decoration: none;
+    font-family: Montserrat;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    float: left;
+    text-shadow: 1px 1px 1px grey;
+    margin-left: 2vh;
+    opacity: 90%;
+}
+
+.wave {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    height: 150px;
+}
+
+.wave #wave-blue-survey {
+    position: absolute;
+    margin: 0px auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 100px;
+    background: url(https://storage.googleapis.com/assets-moody-trial/survey-blue-wave.png);
+    background-size: 1000px 100px;
+    animation: animate 10s linear infinite;
+    animation-delay: 0s;
+}
+
+#wave-pink-survey {
+    position: absolute;
+    margin: 0px auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 900;
+    height: 120px;
+    background: url(https://storage.googleapis.com/assets-moody-trial/survey-pink-wave.png);
+    background-size: 1000px 120px;
+    animation: animate-2 10s linear infinite;
+    animation-delay: 0s;
+}
+
+#wave-white-survey {
+    position: absolute;
+    margin: 0px auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 800;
+    height: 150px;
+    background: url(https://storage.googleapis.com/assets-moody-trial/survey-white-wave.png);
+    background-size: 1000px 150px;
+    animation: animate-2 25s linear infinite;
+    animation-delay: 0s;
+}
+
+h1 {
+    font-family: Montserrat;
+    color: #274483;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 1px 1px 1px grey;
+    margin-top: 15%;
+    letter-spacing: 6px;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+#vid-controls {
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+#vid-canvas,
+#vid-take {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box {
+    width: 50%;
+}
+#photo {
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+input#vid-take,
+input#send {
+    font-family: Montserrat;
+    font-style: bold;
+    font-weight: 500;
+    font-size: 2vmin;
+    color: #274483;
+    background-color: white; /* Green */
+    border: none;
+    padding: 8px 35px;
+    margin: 1vmin;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto;
+    display: inline-block;
+}
+input#send {
+    margin: 3vmin;
+}
+
+img#main-title {
+    padding: 10px;
+    margin-top: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-container {
+    display: flex;
+    background-color: #bdcbe6;
+    justify-content: center;
+}
+
+.flex-container > div.box {
+    margin: 10px;
+    font-size: 30px;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate-2 {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0;
+    }
+}
+
+@media only screen and (min-width: 850px){
+    #vid-show {
+        display: block;
+        margin-bottom: 20px;
+        width: 500px;
+        height: 300px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+    }
+
+    .box img#photo {
+        display: block;
+        top: 0;
+        width: 400px;
+        height: 300px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (max-width: 850px) { 
+    h1 {
+        font-family: Montserrat;
+        color: #274483;
+        font-style: normal;
+        font-weight: 700;
+        text-align: center;
+        font-size: 3em;
+        text-shadow: 1px 1px 1px grey;
+        margin-top: 30vh;
+        letter-spacing: 6px;
+    }
+    
+    #vid-show {
+        display: block;
+        margin-bottom: 20px;
+        width: 500px;
+        height: 300px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+    }
+
+    .box img#photo {
+        display: block;
+        top: 0;
+        width: 400px;
+        height: 300px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .flex-container {
+        display: block;
+        width:100%;
+        margin: 0 auto;
+    }
+    
+    #photo {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    input#vid-take {
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+    .box {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 500px) { 
+    h1 {
+        font-family: Montserrat;
+        color: #274483;
+        font-style: normal;
+        font-weight: 700;
+        text-align: center;
+        font-size: 2em;
+        text-shadow: 1px 1px 1px grey;
+        margin-top: 30vh;
+        letter-spacing: 6px;
+    }
+
+    .flex-container {
+        display: block;
+        width:100%;
+        margin: 0 auto;
+    }
+    
+    #photo {
+        text-align: center;
+        margin: 0 auto;
+
+    }
+
+    input#vid-take {
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+    #vid-show {
+        display: block;
+        margin-bottom: 20px;
+        width: 420px;
+        height: 220px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+    }
+
+    .box img#photo {
+        display: block;
+        top: 0;
+        width: 300px;
+        height: 250px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .box {
+        width: 100%;
+    }
+}

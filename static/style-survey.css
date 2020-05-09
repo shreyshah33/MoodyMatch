@@ -1,0 +1,259 @@
+/* SURVEY PAGE */
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #bdcbe6;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    position: absolute;
+    z-index: 1500;
+    top: 0;
+    left: 0;
+    width: 30vw;
+}
+
+nav a {
+    z-index: 1500;
+    text-decoration: none;
+    font-family: Montserrat;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    float: left;
+    text-shadow: 1px 1px 1px grey;
+    margin-left: 2vh;
+    opacity: 90%;
+}
+
+.wave {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    height: 150px;
+}
+
+.wave #wave-blue-survey {
+    position: absolute;
+    margin: 0px auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 100px;
+    background: url(https://storage.googleapis.com/assets-moody-trial/survey-blue-wave.png);
+    background-size: 1000px 100px;
+    animation: animate 10s linear infinite;
+    animation-delay: 0s;
+}
+
+#wave-pink-survey {
+    position: absolute;
+    margin: 0px auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 900;
+    height: 120px;
+    background: url(https://storage.googleapis.com/assets-moody-trial/survey-pink-wave.png);
+    background-size: 1000px 120px;
+    animation: animate-2 10s linear infinite;
+    animation-delay: 0s;
+}
+
+#wave-white-survey {
+    position: absolute;
+    margin: 0px auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 800;
+    height: 150px;
+    background: url(https://storage.googleapis.com/assets-moody-trial/survey-white-wave.png);
+    background-size: 1000px 150px;
+    animation: animate-2 25s linear infinite;
+    animation-delay: 0s;
+}
+
+.main-question .half {
+    text-align: center;
+    margin: 0px auto;
+}
+
+@media only screen and (max-width: 700px) {
+    .main-question {
+        box-sizing: border-box;
+        background-color: #bdcbe6;
+        position: absolute;
+        margin-top: 200px;
+        left: 0;
+        top: 20%;
+        /* -height/2 */
+    }
+
+    .main-question img#survey {
+        padding: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: 10px;
+        width: 65%;
+    }
+
+    .main-question img#pic {
+        padding: 10px;
+        display: block;
+        margin-left: 10px;
+        margin-right: auto;
+        width: 65%;
+    }
+
+    .main-question img#mainq {
+        padding: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 65%;
+    }
+
+    p {
+        position: fixed;
+        width: 100%;
+        height: 3vh;
+        top: 40vh;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.2em;
+        line-height: 44px;
+        text-align: center;
+        color: #274483;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    button {
+        position: fixed;
+        width: 30%;
+        height: 5vh;
+        top: 80vh;
+        padding: 0px;
+        font-family: Montserrat;
+        background: #ffffff;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.6em;
+        line-height: 18px;
+        display: inline-block;
+        align-items: center;
+        text-align: center;
+        color: #274483;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .main-question {
+        box-sizing: border-box;
+        background-color: #bdcbe6;
+        position: absolute;
+        margin-top: 200px;
+        left: 0;
+        top: 20%;
+        /* -height/2 */
+    }
+
+    .main-question img#survey {
+        padding: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: 10px;
+        width: 40%;
+    }
+
+    .main-question img#pic {
+        padding: 10px;
+        display: block;
+        margin-left: 10px;
+        margin-right: auto;
+        width: 40%;
+    }
+
+    .main-question img#mainq {
+        padding: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
+
+    p {
+        position: fixed;
+        width: 100%;
+        height: 3vh;
+        top: 35vh;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.5em;
+        line-height: 44px;
+        text-align: center;
+        color: #274483;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    button {
+        position: fixed;
+        width: 30%;
+        height: 5vh;
+        top: 60vh;
+        padding: 0px;
+        font-family: Montserrat;
+        background: #ffffff;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1em;
+        line-height: 18px;
+        display: inline-block;
+        align-items: center;
+        text-align: center;
+        color: #274483;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate-2 {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0;
+    }
+}

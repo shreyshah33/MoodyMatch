@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+<head>
+  <title>MOODY</title>
+  <link href="../static/style-survey.css" type="text/css" rel="stylesheet">
+
+  <!--This style section is for the flex container for centering the buttons on the page.-->
+  <style>
+    .flex-button-container {
+      display: flex;
+      background-color: #bdcbe6;
+      justify-content: center;
+    }
+
+    .flex-button-container>div {
+      margin: 10px;
+      font-size: 30px;
+    }
+  </style>
+  <title>MOODY</title>
+  <link href="../static/stylesurvey.css" type="text/css" rel="stylesheet">
+  <link href="../static/style-survey.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav>
+    <!-- <a href="index.html">M O O D Y</a> -->
+    <a href="/">
+      <img border="0" alt="Home" src="https://storage.googleapis.com/assets-moody-trial/moodylogo.png" width="55vw"
+        height="55vh">
+    </a>
+  </nav>
+
+  <div class="wave">
+    <div id="wave-white-survey"></div>
+    <div id="wave-blue-survey"></div>
+    <div id="wave-pink-survey"></div>
+  </div>
+
+  <div class="main-question">
+    <!--  <img id="mainq" src="https://storage.googleapis.com/assets-moody-trial/survey-main-question.png"> -->
+    <p>Moody is here to provide you media to elevate your mood.
+      <br>
+      How would you like to receive your Moody results?
+      <br>
+      We recommend taking a picture for those who are visually impaired.
+    </p>
+
+    <div class="flex-button-container">
+      <!--    <div><a href="/survey"><img id="survey" src="https://storage.googleapis.com/assets-moody-trial/survey-button.png"></a></div>
+      <div><a href="/webcam"><img id="pic" src="https://storage.googleapis.com/assets-moody-trial/picture-button.png"></a></div>
+  -->
+      <a href="/webcam"><button style="left:15%">TAKE A PICTURE</button></a>
+      <a href="/survey"><button style="left:55%">FILL OUT A SURVEY</button></a>
+    </div>
+  </div>
+</body>
+
+</html>
